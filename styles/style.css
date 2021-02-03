@@ -1,0 +1,650 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+}
+
+a {
+  font-family: "Vollkorn", serif;
+  color: #bf9e7b;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Yesteryear", cursive;
+  color: #bf9e7b;
+  font-size: 3.5rem;
+  font-style: normal;
+}
+
+h2 {
+  color: #bf9e7b;
+  font-size: 2rem;
+  font-family: "Vollkorn", serif;
+}
+
+h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.bg1 {
+  background: gray;
+  background: url("/img/header/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (20vh)[6];
+      grid-template-rows: repeat(6, 20vh);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+}
+
+.navbar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar button {
+  display: none;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar ul li .active {
+  color: black;
+}
+
+#page-header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  background-color: transparent;
+}
+
+#page-header .title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-header .title div p {
+  font-family: "Vollkorn", serif;
+  font-size: 1.2rem;
+}
+
+#page-header .title div p:last-child {
+  color: black;
+  padding-top: 1.5rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  grid-row: 3 / span 5;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8 / span 5;
+  background-color: #141723;
+  padding: 2rem;
+  margin-left: auto;
+}
+
+.contact .reservation {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: solid 1px #bf9e7b;
+  color: white;
+  text-decoration: none;
+}
+
+.contact .reservation:hover {
+  background: #bf9e7b;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#about-us {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / span 6;
+  text-align: center;
+}
+
+#about-us h1 {
+  padding-top: 3rem;
+  padding-bottom: 0.2rem;
+}
+
+#about-us p {
+  color: #808080;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+#about-img {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8 / span 5;
+  width: 100%;
+  height: 100%;
+}
+
+.specialities {
+  background-color: #4c4d4f;
+  background-image: url("/img/delicious-strawberry-popsicles-on-a-wooden-board-picjumbo-com.jpg");
+  background-size: cover;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.specialities .container {
+  color: black;
+  text-align: center;
+}
+
+.specialities .container h1 {
+  color: white;
+}
+
+.specialities .container p {
+  font-family: "Vollkorn", serif;
+  font-size: 1.2rem;
+}
+
+.specialities .container div {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.specialities .container div div {
+  padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.specialities .container div div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.specialities .container div div p {
+  background-color: white;
+  color: #bf9e7b;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#menu {
+  text-align: center;
+  background-color: #141723;
+  padding: 0.5rem;
+  padding-bottom: 5rem;
+}
+
+#menu h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#menu p {
+  font-family: "Vollkorn", serif;
+  font-size: 1.2rem;
+}
+
+#menu h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+#menu .menu-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+#menu .menu-table .menu-item {
+  padding: 1rem;
+}
+
+#menu .menu-table .menu-item h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#menu .menu-table .menu-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu .menu-table .menu-item div .price {
+  font-size: 2.1rem;
+  font-family: "Raleway", sans-serif;
+  color: #bf9e7b;
+  padding-left: 2rem;
+}
+
+#menu a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: solid 1px #bf9e7b;
+  color: black;
+  text-decoration: none;
+  background-color: #bf9e7b;
+}
+
+#menu a:hover {
+  background: transparent;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  color: white;
+}
+
+#menu .menu2 {
+  padding-bottom: 5rem;
+}
+
+#reservations {
+  padding: 1rem 0;
+  background-color: #4c4d4f;
+  background-image: url("/img/sweet-morning-breakfast-picjumbo-com.jpg");
+  background-size: cover;
+}
+
+#reservations h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 3rem;
+  color: #eceaea;
+}
+
+#reservations p {
+  color: black;
+  font-family: "Vollkorn", serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#reservations .reservation-form {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#reservations .reservation-form input[type="submit"] {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  border: solid 1px #bf9e7b;
+  color: black;
+  text-decoration: none;
+  background-color: #bf9e7b;
+  margin: 2rem auto;
+}
+
+#reservations .reservation-form input[type="submit"]:hover {
+  background: transparent;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  color: black;
+  background-color: white;
+}
+
+#reservations .reservation-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#reservations .reservation-form div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+#reservations .reservation-form div div select, #reservations .reservation-form div div input {
+  border: none;
+  background-color: white;
+  height: 3.8rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#reservations .reservation-form div div input {
+  height: 1.55rem;
+  font-size: medium;
+}
+
+#reservations .reservation-form div div label {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin: 0.5rem 0;
+}
+
+.page-footer {
+  background-color: #141723;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.page-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-footer .container h2 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.page-footer .container .address {
+  width: 160px;
+}
+
+.page-footer .container .address .addr {
+  padding-bottom: 1.5rem;
+}
+
+.page-footer .container .address a {
+  padding: 0.5rem 2rem;
+  border: solid 1px #bf9e7b;
+  color: white;
+  text-decoration: none;
+}
+
+.page-footer .container .address a:hover {
+  background: #bf9e7b;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.page-footer .container .hours {
+  width: 400px;
+}
+
+.page-footer .container .hours a {
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin-top: 2.15rem;
+  padding: 0.6rem 3rem;
+  border: solid 1px #bf9e7b;
+  color: white;
+  text-decoration: none;
+}
+
+.page-footer .container .hours a:hover {
+  background: #bf9e7b;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.page-footer .container .social {
+  width: 220px;
+}
+
+.page-footer .container .social div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-footer .copyright {
+  color: #bf9e7b;
+  font-size: 1.2rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.page-footer .copyright a {
+  font-family: "Raleway", sans-serif;
+}
+
+@media only screen and (max-width: 960px) {
+  .bg1 {
+    display: none;
+  }
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar button {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .navbar button img {
+    height: 2rem;
+    width: 2rem;
+  }
+  .navbar div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar div img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .navbar ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar ul li {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #page-header {
+    background-image: url("/img/header/bg.jpg");
+    background-size: cover;
+    padding: 0.5rem;
+  }
+  #page-header h1 {
+    text-align: center;
+  }
+  .contact {
+    width: 100%;
+  }
+  .specialities .container div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .specialities .container div div {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .menu-table {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #reservations div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  .page-footer .container .addr,
+  .page-footer .container .hours,
+  .page-footer .container .social {
+    width: 90%;
+  }
+  .page-footer .copyright {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
